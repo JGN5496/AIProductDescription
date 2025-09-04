@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn img into audio story</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔗 GENERATE YOUR IMAGE DESCRIPTION </h1>
+            <p class="subtitle">Choose an image...</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">☁️</div>
+                <div class="upload-text">
+                    <p class="main-text">Drag and drop file here</p>
+                    <p class="limit-text">Limit 200MB per file • JPG, JPEG</p>
+                </div>
+                <button class="browse-btn" id="browseBtn">Browse files</button>
+                <input type="file" id="fileInput" accept=".jpg,.jpeg,.png" style="display: none;">
+            </div>
+        </div>
+
+        <div class="preview-section" id="previewSection" style="display: none;">
+            <h3>Uploaded Image</h3>
+            <div class="image-container">
+                <img id="previewImage" src="" alt="Uploaded image preview">
+            </div>
+            
+            <div class="generation-section">
+                <div class="loading" id="loadingText" style="display: none;">
+                    <div class="spinner"></div>
+                    <span>Generating description...</span>
+                </div>
+                
+                <div class="result-section" id="resultSection" style="display: none;">
+                    <h4>Generated Description:</h4>
+                    <div class="description-box">
+                        <p id="generatedText"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="error-message" id="errorMessage" style="display: none;"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
