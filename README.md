@@ -5,7 +5,22 @@ A Flask web application that uses Hugging Face's BLIP model to generate descript
 ## 🎬 Demo
 
 ### Video Demonstration
-![Demo Video](./Demo.mov)
+
+[![Demo Video](https://img.youtube.com/vi/k98CJ4k5riw/maxresdefault.jpg)](https://www.youtube.com/watch?v=k98CJ4k5riw)
+
+*Click the image above to watch the application demo on YouTube*
+
+**Alternative YouTube Embed:**
+```html
+<!-- For HTML-enabled markdown viewers -->
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=k98CJ4k5riw">
+    <img src="https://img.youtube.com/vi/k98CJ4k5riw/maxresdefault.jpg" 
+         alt="AI Product Description Generator Demo" 
+         width="600">
+  </a>
+</div>
+```
 
 
 ## Features
