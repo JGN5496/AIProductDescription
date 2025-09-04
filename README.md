@@ -2,6 +2,12 @@
 
 A Flask web application that uses Hugging Face's BLIP model to generate descriptive text from uploaded images.
 
+## 🎬 Demo
+
+### Video Demonstration
+![Demo Video](./Demo.mov)
+
+
 ## Features
 
 - 🖼️ Image upload with drag & drop functionality
