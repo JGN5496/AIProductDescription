@@ -27,7 +27,7 @@ cp config.env .env  # Create your own environment file
 ```
 
 Edit the `.env` file to customize settings:
-- `FLASK_PORT`: Port number (default: 5000)
+- `FLASK_PORT`: Port number (default: 8001)
 - `FLASK_HOST`: Host address (default: 0.0.0.0)
 - `FLASK_DEBUG`: Debug mode (default: True)
 - `HUGGINGFACE_API_KEY`: Your Hugging Face API key (optional)
@@ -54,11 +54,11 @@ source venv/bin/activate  # If not already activated
 python app.py
 ```
 
-The application will be available at `http://localhost:5000` (or the port specified in your `.env` file)
+The application will be available at `http://localhost:8001` (or the port specified in your `.env` file)
 
 ### 5. Using the Application
 
-1. Open your web browser and navigate to `http://localhost:5000`
+1. Open your web browser and navigate to `http://localhost:8001`
 2. Upload an image by either:
    - Clicking "Browse files" and selecting an image
    - Dragging and dropping an image file onto the upload area
@@ -84,7 +84,7 @@ The application uses environment variables for configuration. Available settings
 
 | Variable | Description | Default Value |
 |----------|-------------|---------------|
-| `FLASK_PORT` | Port number for the Flask app | `5000` |
+| `FLASK_PORT` | Port number for the Flask app | `8001` |
 | `FLASK_HOST` | Host address | `0.0.0.0` |
 | `FLASK_DEBUG` | Enable debug mode | `True` |
 | `HUGGINGFACE_MODEL` | Model to use for image captioning | `Salesforce/blip-image-captioning-base` |
